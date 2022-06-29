@@ -1,0 +1,291 @@
+@font-face {
+    font-family: 'Trispace';
+    src: url('lib/Trispace/Trispace-VariableFont_wdth,wght.ttf');
+}
+
+html, body{
+    margin: 0;
+    background: #c6c6c6;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.img-block {
+    margin-bottom: 0.5rem;
+    background: linear-gradient(0deg, rgba(195,38,34,1) 0%, rgba(29,29,27,1) 100%);
+    border-radius: 0 0 1rem 1rem;
+    padding-top: 1rem;
+    padding-bottom: 0;
+}
+
+.img-block p {
+    color: white;
+    text-align: center;
+    font: 1.5rem sans-serif;
+    margin: 1rem 0 1rem 0;
+}
+
+.img-block a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.left-block {
+    padding-left: 1rem;
+    padding-right: 0;
+}
+
+.background-block {
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(195,38,34,1) 58%);
+}
+
+input[type=email], input[type=password], 
+input[type=text], input[type=number], 
+input[type=radio] {
+    margin-left: 2rem;
+    border: 1px solid grey;
+    padding: 0.2rem;  
+}
+
+input[type=radio]{
+    margin-top: 1.5rem;
+}
+
+select.form-control {
+    width: 80%;
+    margin-left: 2rem;
+    border: 1px solid grey;
+}
+
+label {
+    margin-left: 5rem;
+    color: white;
+}
+
+.checkbox > label {
+    margin-left: 1rem;
+    padding-bottom: 1rem;
+    color: black;
+}
+
+.form-group .btn {
+    margin-left: 2rem;
+    border: 1px solid grey;
+}
+
+input::placeholder{
+    text-align: center;
+    font-style: italic;
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    padding: 0.1rem;
+}
+
+.form-control::-webkit-input-placeholder {
+    color: white;
+  }
+
+
+.social-facebook {
+    width: 6rem;
+    height: 5rem;
+    background: url('icon/icon-sprite-28.png');
+    background-position: 1.5% 10%;    
+    cursor: pointer;
+}
+
+.social-facebook:hover {
+    background-position: 1.5% 50%;
+}
+
+.social-google {
+    width: 6rem;
+    height: 5rem;
+    background: url('icon/icon-sprite-28.png');
+    background-position: 30% 10%;    
+    cursor: pointer;
+}
+
+.social-google:hover {
+    background-position: 30% 50%;
+}
+
+.social-skype {
+    width: 6rem;
+    height: 5rem;
+    background: url('icon/icon-sprite-28.png');
+    background-position: 69.5% 10%;    
+    cursor: pointer;
+}
+
+.social-skype:hover {
+    background-position: 69.5% 50%;
+}
+
+.social-twitter {
+    width: 6rem;
+    height: 5rem;
+    background: url('icon/icon-sprite-28.png');
+    background-position: 79% 10%;    
+    cursor: pointer;
+}
+
+.social-twitter:hover {
+    background-position: 79% 50%;
+}
+
+.social-youtube {
+    width: 6rem;
+    height: 5rem;
+    background: url('icon/icon-sprite-28.png');
+    background-position: 98.5% 10%;    
+    cursor: pointer;
+}
+
+.social-youtube:hover {
+    background-position: 98.5% 50%;
+}
+
+.product-sort-block {
+    margin: 0 0 0.5rem;
+}
+
+.product-sort {
+    display: inline-block;
+    position: relative;
+    background-color: white;
+    border: 1px solid #c6c6c6;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    z-index: 1;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    margin-top: 0.5px;
+    padding: 0;
+    display: none;
+}
+
+ul li {
+    padding: .3rem 1rem;
+    border: 1px solid #c6c6c6;
+    border-radius: 0.5rem;
+    border-top: none;
+    background-color: white;
+}
+
+li {
+    display: list-item;
+    font-family: Arial;
+}
+
+.product-sort:hover > ul {
+    display: inline-block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    color: #4169E1;
+    left: -1px;
+    right: -1px;
+}
+
+.product-sort > ul li:hover > ul {
+    display: inline-block;
+    position: absolute;
+    right: 100%;
+    color: #4169E1;
+    cursor: pointer;
+}
+
+.img-container {
+    float: left;
+    padding: 5px;
+}
+
+.product-content {
+    border: 1px solid #c6c6c6;
+    padding: 1rem;
+    background: white;
+}
+
+.product { 
+    position: relative;
+    width: 20%;
+    min-width: 180px;
+    border: 1px solid #c6c6c6;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    margin-bottom: 0.3rem;
+}
+
+.product .addtowish {
+    position: absolute;
+    top: 0.3rem;
+    left: 0.1rem;
+    cursor: pointer;
+}
+
+.product .addtocard {
+    position: absolute;
+    top: 0.3rem;
+    right: 0.1rem;
+    cursor: pointer;
+    transform: rotate(-45deg);
+    animation: card 3s infinite;
+}
+
+@keyframes card {
+    50% {transform: rotate(45deg);}
+}
+
+.addtowish:hover, .addtocard:hover, li:hover {
+    box-shadow: 0rem 0.0625rem 0.625rem red;
+}
+
+.addtowish:hover {
+    background-image: url('icon/premium-icon-heart-4209081.png');
+}
+
+.product h3 { 
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+    word-break: keep-all;
+    padding-bottom: 1.5rem;
+}
+
+h3 { 
+    display: block;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #4169E1;
+}
+
+.product a {
+    font: 1.2rem Arial;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+
+.product .price {
+    text-align: center;
+    font: 1.5rem Arial bold;
+    font-family: 'Trispace';
+    color: red;
+}
+
+.product .price span {
+    white-space: nowrap;
+}
+
+footer {
+    flex-shrink: 0;
+}
+
+footer > span {
+    font-size: 2.2rem;
+    font-variant: super;
+}

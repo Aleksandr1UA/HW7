@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>HW7</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="bootstrap.min.css" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <!--Pictures Block -->
+        <header class="img-block container">
+            <div class="row"> 
+                <div class="col-sm-4">
+                    <a href="#">
+                        <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-card-40-iphone12purple-202109?wid=340&hei=264&fmt=p-jpg&qlt=95&.v=1646335268265" class="img-responsive img-rounded" alt="Iphone 12">
+                        <p>iPhone 12</p>
+                    </a>
+                </div>
+                <div class="col-sm-4">
+                    <a href="#">
+                        <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-card-40-iphonese-202203?wid=340&hei=264&fmt=jpeg&qlt=95&.v=1646415838921" class="img-responsive img-rounded" alt="Iphone SE">
+                        <p>iPhone SE</p>
+                    </a>
+                </div>
+                <div class="col-sm-4">
+                    <a href="#">
+                        <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-card-40-iphone13pro-202203?wid=340&hei=264&fmt=p-jpg&qlt=95&.v=1644989935267" class="img-responsive img-rounded" alt="Iphone 13 Pro">
+                        <p>iPhone 13 Pro</p>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <!-- Main -->
+        <main class="row">
+            <aside class="left-block col-sm-2">
+                <!--Form Block -->
+                <div class="background-block">
+                    <form action="index.html" class="form-horizontal" method="post">
+                        <label for="Email" class="col-sm-2 control-label"></label>
+                        <div class="form-group">
+                            <div class="col-sm-10">
+                                <input type="email" class="form-control" id="Email" placeholder="Email" required>
+                            </div>
+                        </div>
+
+                        <label for="Login" class="col-sm-2 control-label"></label>
+                        <div class="form-group">
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="Login" placeholder="Login">
+                            </div>
+                        </div>
+
+                        <label for="Password" class="col-sm-2 control-label"></label>
+                        <div class="form-group">
+                            <div class="col-sm-10">
+                                <input type="password" class="form-control" id="Password" placeholder="Password" required>
+                            </div>
+                        </div>
+
+                        <label for="Age" class="control-label">Ваш возраст</label>
+                        <div class="form-group">
+                            <div class="col-sm-10">
+                                <input type="number" class="form-control" id="Age" min="1" max="100" required>
+                            </div>
+                        </div>
+
+                        <label for="Country" class="control-label">Ваша страна</label>
+                        <select name="Country" class="select-country form-control">
+                            <option value="ukraine">Ukraine</option>
+                            <option value="germany">Germany</option>
+                            <option value="poland">Poland</option>
+                            <option value="usa">USA</option>
+                            <option value="france">France</option>
+                        </select>
+                        
+                        <input type="radio" name="gender" value="male" checked><i>&nbsp Male</i>
+                        <input type="radio" name="gender" value="female"><i>&nbsp Female</i>
+                        
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> Remember me
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <button type="submit" class="btn btn-default">Sign in</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>  
+            </aside>
+            <!-- Start Product Content -->
+            <section class="product-content col-sm-10">
+                <section class="top-center-block row">
+                    <!-- Start Filter Block -->
+                    <nav class="product-sort-block col-sm-6">
+                        <div class="product-sort">
+                            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" tabindex="0">Сортировка <span class="caret"></span></button>
+                            <ul aria-labelledby="dropdownMenu1">
+                                <li>Модель
+                                    <ul>
+                                        <li>13 Pro Max</li>
+                                        <li>12 Pro Max</li>
+                                        <li>SE 2020</li>
+                                    </ul>
+                                </li>
+                                <li>Объем памяти
+                                    <ul>
+                                        <li>128Гб</li>
+                                        <li>256ГБ</li>
+                                        <li>1Тб</li>
+                                    </ul>
+                                </li>
+                                <li>Цвет
+                                    <ul>
+                                        <li>Sierra Blue</li>
+                                        <li>Graphite</li>
+                                        <li>Gold</li>
+                                        <li>Silver</li>
+                                        <li>Alpina Green</li>
+                                        <li>White</li>
+                                        <li>Starlight</li>
+                                        <li>Red</li>
+                                        <li>Midnight</li>
+                                        <li>Тихоокеанский синий</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div> 
+                    </nav>
+                    <!-- End Filter Block -->
+                    <!-- Start Social Block -->
+                    <section class="social-block col-sm-6 row">
+                        <div class="social-facebook col-sm-s">
+                            <a href="https://facebook.com"></a>
+                        </div>
+                        <div class="social-google col-sm-2">
+                            <a href="https://google.com"></a>
+                        </div>
+                        <div class="social-skype col-sm-2">
+                            <a href="https://skype.com"></a>
+                        </div>
+                        <div class="social-twitter col-sm-2">
+                            <a href="https://twitter.com"></a>
+                        </div>
+                        <div class="social-youtube col-sm-2">
+                            <a href="https://youtube.com"></a>
+                        </div>
+                    </section>
+                    <!-- End Social Block -->
+                </section>
+                <!-- Start Product Block -->
+                <section class="row">
+                    <article class="product col col-sm-2" tabindex="0">
+                        <div class="caption">
+                            <img class="addtowish" src="icon/premium-icon-heart-4209448.png">
+                            <img class="addtocard" src="icon/free-icon-shopping-cart-5087847.png">
+                            <div class="img-container">
+                                <img class="img-responsive" src="https://www.istore.ua/upload/resize_cache/iblock/985/275_170_1/apple_iphone_13_pro_max_1_sierra_blue.jpg">
+                            </div>
+                            <a href="https://www.istore.ua/catalog/item/apple-iphone-13-pro-max-128-gb-sierra-blue/">
+                                <h3>Apple iPhone 13 Pro Max 128Гб (Sierra Blue)</h3>
+                            </a>
+                            <p class="price text-center"><span>43 899</span> грн</p>
+                        </div>    
+                    </article>
+
+                    <article class="product col col-sm-2" tabindex="0">
+                        <div class="caption">
+                            <img class="addtowish" src="icon/premium-icon-heart-4209448.png">
+                            <img class="addtocard" src="icon/free-icon-shopping-cart-5087847.png">
+                            <div class="img-container">
+                                <img class="img-responsive" src="https://www.istore.ua/upload/resize_cache/iblock/416/275_170_1/apple_iphone_13_pro_max_256_graphite.jpg">
+                            </div>
+                            <a href="https://www.istore.ua/catalog/item/apple-iphone-13-pro-max-128-gb-sierra-blue/">
+                                <h3>Apple iPhone 13 Pro Max 256Гб (Graphite)</h3>
+                            </a>
+                            <p class="price"><span>47 299</span> грн</p>
+                        </div>
+                    </article>
+
+                    <article class="product col col-sm-2" tabindex="0">
+                        <div class="caption">
+                            <img class="addtowish" src="icon/premium-icon-heart-4209448.png">
+                            <img class="addtocard" src="icon/free-icon-shopping-cart-5087847.png">
+                            <div class="img-container">
+                                <img class="img-responsive" src="https://www.istore.ua/upload/resize_cache/iblock/e57/275_170_1/apple_iphone_13_pro_max_256_gold.jpg">
+                            </div>
+                            <a href="https://www.istore.ua/catalog/item/apple-iphone-13-pro-max-128-gb-sierra-blue/">
+                                <h3>Apple iPhone 13 Pro Max 1Тб (Gold)</h3>
+                            </a>
+                            <p class="price"><span>57 399</span> грн</p>
+                        </div>
+                    </article>
+
+                    <article class="product col col-sm-2" tabindex="0">
+                        <div class="caption">
+                            <img class="addtowish" src="icon/premium-icon-heart-4209448.png">
+                            <img class="addtocard" src="icon/free-icon-shopping-cart-5087847.png">
+                            <div class="img-container">
+                                <img class="img-responsive" src="https://www.istore.ua/upload/resize_cache/iblock/d96/275_170_1/apple_iphone_13_pro_max_256_silver.jpg">
+                            </div>
+                            <a href="https://www.istore.ua/catalog/item/apple-iphone-13-pro-max-128-gb-sierra-blue/">
+                                <h3>Apple iPhone 13 Pro Max 256Гб (Silver)</h3>
+                            </a>
+                            <p class="price"><span>46 999</span> грн</p>
+                        </div>
+                    </article>
+
+                    <article class="product col col-sm-2" tabindex="0">
+                        <div class="caption">
+                            <img class="addtowish" src="icon/premium-icon-heart-4209448.png">
+                            <img class="addtocard" src="icon/free-icon-shopping-cart-5087847.png">
+                            <div class="img-container">
+                                <img src="https://www.istore.ua/upload/resize_cache/iblock/122/275_170_1/apple_iphone_13_pro_max_256_gb_alpine_green.jpg" width="188px" height="170px">
+                            </div>
+                            <a href="https://www.istore.ua/catalog/item/apple-iphone-13-pro-max-128-gb-sierra-blue/">
+                                <h3>Apple iPhone 13 Pro Max 256Гб (Alpina Green)</h3>
+                            </a>
+                            <p class="price"><span>47 299</span> грн</p>
+                        </div>
+                    </article>
+
+                    <article class="product col col-sm-2" tabindex="0">
+                        <div class="caption">
+                            <img class="addtowish" src="icon/premium-icon-heart-4209448.png">
+                            <img class="addtocard" src="icon/free-icon-shopping-cart-5087847.png">
+                            <div class="img-container">
+                                <img class="img-responsive" src="https://www.istore.ua/upload/resize_cache/iblock/7ea/275_170_1/apple_iphone_se_2020_g_256_gb_belyy.jpg">
+                            </div>
+                            <a href="https://www.istore.ua/catalog/item/apple-iphone-13-pro-max-128-gb-sierra-blue/">
+                                <h3>Apple iPhone SE 2020 г. 256Гб (White)</h3>
+                            </a>
+                            <p class="price"><span>16 999</span> грн</p>
+                        </div>
+                    </article>
+
+                    <article class="product col col-sm-2" tabindex="0">
+                        <div class="caption">
+                            <img class="addtowish" src="icon/premium-icon-heart-4209448.png">
+                            <img class="addtocard" src="icon/free-icon-shopping-cart-5087847.png">
+                            <div class="img-container">
+                                <img class="img-responsive" src="https://www.istore.ua/upload/resize_cache/iblock/c50/275_170_1/apple_iphone_se_2022_g_128_gb_starlight.jpg">
+                            </div>
+                            <a href="https://www.istore.ua/catalog/item/apple-iphone-13-pro-max-128-gb-sierra-blue/">
+                                <h3>Apple iPhone SE 2020 г. 128Гб (Starlight)</h3>
+                            </a>
+                            <p class="price"><span>17 749</span> грн</p>
+                        </div>
+                    </article>
+
+                    <article class="product col col-sm-2" tabindex="0">
+                        <div class="caption">
+                            <img class="addtowish" src="icon/premium-icon-heart-4209448.png">
+                            <img class="addtocard" src="icon/free-icon-shopping-cart-5087847.png">
+                            <div class="img-container">
+                                <img class="img-responsive" src="https://www.istore.ua/upload/resize_cache/iblock/837/275_170_1/apple_iphone_se_2022_g_256_gb_product_red.jpg">
+                            </div>
+                            <a href="https://www.istore.ua/catalog/item/apple-iphone-13-pro-max-128-gb-sierra-blue/">
+                                <h3>Apple iPhone SE 2020 г. 256Гб (Red)</h3>
+                            </a>
+                            <p class="price"><span>21 299</span> грн</p>
+                        </div>
+                    </article>
+
+                    <article class="product col col-sm-2" tabindex="0">
+                        <div class="caption">
+                            <img class="addtowish" src="icon/premium-icon-heart-4209448.png">
+                            <img class="addtocard" src="icon/free-icon-shopping-cart-5087847.png">
+                            <div class="img-container">
+                                <img class="img-responsive" src="https://www.istore.ua/upload/resize_cache/iblock/fea/275_170_1/apple_iphone_se_2022_g_256_gb_midnight.jpg">
+                            </div>
+                            <a href="https://www.istore.ua/catalog/item/apple-iphone-13-pro-max-128-gb-sierra-blue/">
+                                <h3>Apple iPhone SE 2020 г. 256Гб (Midnight)</h3>
+                            </a>
+                            <p class="price"><span>21 299</span> грн</p>
+                        </div>
+                    </article>
+
+                    <article class="product col col-sm-2" tabindex="0">
+                        <div class="caption">
+                            <img class="addtowish" src="icon/premium-icon-heart-4209448.png">
+                            <img class="addtocard" src="icon/free-icon-shopping-cart-5087847.png">
+                            <div class="img-container">
+                                <img class="img-responsive" src="https://www.istore.ua/upload/resize_cache/iblock/fde/275_170_1/apple_iphone_12_pro_max_128_gb_tikhookeanskiy_siniy.jpg">
+                            </div>
+                            <a href="https://www.istore.ua/catalog/item/apple-iphone-13-pro-max-128-gb-sierra-blue/">
+                                <h3>Apple iPhone 12 Pro Max 128Гб (Тихоокеанский синий)</h3>
+                            </a>
+                            <p class="price"><span>45 999</span> грн</p>
+                        </div>
+                    </article>
+                </section>
+                <!-- End Product Content -->
+            </section>
+        </main>
+        <footer class="row p-3 mb-2 bg-danger text-white border border-3 border-opacity-50 rounded-top">
+            <span class="text-center">Footer</span>
+        </footer>
+    </body>
+</html>
